@@ -8,7 +8,6 @@ const Item = ( {products} ) => {
             <div>
                 <h3 className="card-title">{products.title}</h3>
                 <h2 className="btn btn-primary d-flex justify-content-center">${products.price}</h2>
-
                 </div>
         </div>
             </div>
