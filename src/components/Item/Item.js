@@ -2,20 +2,21 @@ import React from "react";
 
 const Item = ( {title, image, price, stock, categoryid,description} ) => {
     return (
-        <div className="card">
+        <div className="card d-flex justify-content-center text-center align-items-center col-lg-4">
         <div className="card-header">
     {title}
         </div>
-        <img src={image} className="card-img-top" />
+        <img src={image} className="card-img-top img-fluid w-50" />
         <ul className="list-group list-group-flush">
         <li className="list-group-item">Stock Disponible: {stock}</li>
         <li className="list-group-item">Precio: ${price}</li>
         <li className="list-group-item">{description}</li>
         <li className="list-group-item">Categoria: {categoryid}</li>
         </ul>
+        <button className="btn btn-primary">Comprar</button>
         <div className="card-body">
         </div>
-        /</div>
+        </div>
         )
     }
 
