@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Item from "./components/Item/Item";
 import {db} from "./components/Firebasefdx-shop/database"
 import {getDocs, collection} from "firebase/firestore"
+import ItemList from "./components/ItemList/ItemList";
 
 function App() {
   const getProducts = async () => {
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ItemListContainer/>}/>
           <Route path="/Item" element={<Item/>}/>
+          <Route path="/ItemList" element={<ItemList/>}/>
         </Routes>
         </BrowserRouter>
     </div>
