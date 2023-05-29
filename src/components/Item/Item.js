@@ -1,17 +1,23 @@
 import React from "react";
 
-const Item = ( {products} ) => {
+const Item = ( {title, image, price, stock, categoryid,description} ) => {
     return (
-        <div className="item card text-center d-flex align-items-center">
-        <img className="d-flex justify-content-center"  src={products.image} width="25%" />
-        <div className="card-body">
-            <div>
-                <h3 className="card-title">{products.title}</h3>
-                <h2 className="btn btn-primary d-flex justify-content-center">${products.price}</h2>
-                </div>
+        <div className="card">
+        <div className="card-header">
+    {title}
         </div>
-            </div>
-    )
-}
+        <img src={image} className="card-img-top" />
+        <ul className="list-group list-group-flush">
+        <li className="list-group-item">Stock Disponible: {stock}</li>
+        <li className="list-group-item">Precio: ${price}</li>
+        <li className="list-group-item">{description}</li>
+        <li className="list-group-item">Categoria: {categoryid}</li>
+        </ul>
+        <div className="card-body">
+        </div>
+        /</div>
+        )
+    }
+
 
 export default Item;

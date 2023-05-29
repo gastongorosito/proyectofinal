@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { db } from "../Firebasefdx-shop/database";
 import { collection, getDocs } from "firebase/firestore";
+import ItemList from "../ItemList/ItemList";
 
 
 
@@ -18,7 +19,12 @@ useEffect (() => {
   getProducts();
 }, [] );
 
-console.log(products);
+return (
+  <div>
+            <ItemList products={products} />
+        </div>
+)
+
 
 }
 

@@ -6,7 +6,7 @@ const ItemList = ({products}) => {
     <>
     <div className="row">
       <h1 className="d-flex justify-content-center mb-4">Productos</h1>
-    {products.map( (product) => (<h3>{product.title}</h3>))}
+    {products.map( (product) => <h3>{product.title}</h3> )}
     <div/>
     </div>
     </>
