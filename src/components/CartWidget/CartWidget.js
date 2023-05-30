@@ -1,11 +1,11 @@
 import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
-const CartWidget = ({}) => {
+const CartWidget = ({itemCount}) => {
 
     return ( 
         <div className="cart-icon">
     <button> <FiShoppingCart/>
-    0
+    {itemCount}
     </button>
         </div>
     )
