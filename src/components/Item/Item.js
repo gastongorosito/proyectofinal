@@ -20,7 +20,7 @@ const Item = ({ title, image, price, stock, categoryid, description }) => {
       </ul>
       <button
         className="btn btn-primary"
-       onClick={handleAddToCart}
+        onClick={handleAddToCart}
       >
         Agregar al Carrito
       </button>

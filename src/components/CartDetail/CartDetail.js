@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { CartContext } from "../CartContext/CartContext";
 
-const CartDetail = () => {
+const CartDetails = () => {
   const { cartItems } = useContext(CartContext);
 
     return (
@@ -14,7 +14,6 @@ const CartDetail = () => {
     {cartItems.map((item) => (
             <li key={item.id}>
             <h3>{item.title}</h3>
-            <img src={item.image}/>
             <p>Precio: ${item.price}</p>
             <p>Cantidad: {item.quantity}</p>
             </li>
@@ -25,4 +24,4 @@ const CartDetail = () => {
 );
 };
 
-export default CartDetail;
+export default CartDetails;
