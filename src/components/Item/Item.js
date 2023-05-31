@@ -10,7 +10,7 @@ const Item = ({ title, image, price, stock, categoryid, description }) => {
   };
   console.log(handleAddToCart)
   return (
-    <div className="card d-flex justify-content-center text-center align-items-center col-lg-4">
+    <div className="card d-flex justify-content-center space-bet text-center align-items-center col-lg-4">
       <div className="card-header">{title}</div>
       <img src={image} alt="imagendelproducto" className="card-img-top img-fluid w-50" />
       <ul className="list-group list-group-flush">
