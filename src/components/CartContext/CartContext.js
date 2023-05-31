@@ -21,6 +21,7 @@ console.log(addToCart)
     <CartContext.Provider
       value={{
         cartItems,
+        setCartItems,
         addToCart,
         removeFromCart,
         clearCart,
