@@ -6,15 +6,16 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyChsZc6KGb39WNyAGhNGMDrXy9vGjb2QpE",
-  authDomain: "fdx-shop.firebaseapp.com",
-  projectId: "fdx-shop",
-  storageBucket: "fdx-shop.appspot.com",
-  messagingSenderId: "371904164257",
-  appId: "1:371904164257:web:dfe66468b8a63c9cb19be0"
+  apiKey: "AIzaSyC6x9MNEQvX_kU3J-fR2fLyvRTw6XlqjEI",
+  authDomain: "fdxshop-2f651.firebaseapp.com",
+  projectId: "fdxshop-2f651",
+  storageBucket: "fdxshop-2f651.appspot.com",
+  messagingSenderId: "974401203100",
+  appId: "1:974401203100:web:94d4765a1def4717037659"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app)
+
